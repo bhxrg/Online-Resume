@@ -42,7 +42,6 @@
         .icon {
             margin-right: 8px;
         }
-    }
         .skill {
             margin-bottom: 16px;
         }
@@ -64,7 +63,7 @@
         }
         .frontend-bar {
             width: 90%;
-            background-color: #0076f4;
+            background-color: #0011ff;
         }
         .pyc-bar {
             width: 95%;
@@ -76,11 +75,11 @@
         }
         .basic-bar {
             width: 89%;
-            background-color: #0011ff;
+            background-color: #0076f4;
         }
         .tools-bar {
             width: 90%;
-            background-color: #0076f4;
+            background-color: #0011ff;
         }
         .navbar {
             background-color: #333;
@@ -101,16 +100,49 @@
             background-color: #ddd;
             color: black;
         }
-        
+        @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+        }
+
+        .myElement {
+         animation: fadeIn 2s ease-in-out;
+         text-align: center;/* Increase the duration */
+        }
+
+        /* Example media query for responsive design */
+        @media only screen and (max-width: 600px) {
+        /* Styles for screens with a width of 600 pixels or less */
+        .myElement {
+        /* Adjust styles for smaller screens */
+         }
+       }
+
     </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var header = document.querySelector('header');
+
+        header.addEventListener('mouseover', function() {
+            header.style.backgroundColor = '#409c07'; 
+        });
+
+        header.addEventListener('mouseout', function() {
+            header.style.backgroundColor = '#007bff'; 
+        });
+    });
+</script>
 </head>
 <body>
 
     <header>
         <h1 style="margin: 0;"><i class="fas fa-user-circle icon"></i> Bhargavi K</h1>
-        <p>Student at DSCE</p>
+        <p>Student at Dayananda Sagar College of Engineering</p>
 
     </header>
+    <div class="myElement">Welcome!Hello and welcome all to my resume page!!</div>
+
 
     <div class="navbar">
         <a href="https://www.linkedin.com/in/bhargavi-k-1274b7258" target="_blank"><i class="fab fa-linkedin icon"></i></a>
@@ -270,14 +302,14 @@
             </div>
         </div>
     </section>
-
+    
     <section>
         <h2>Contact <i class="fas fa-info-circle icon"></i></h2>
-        <p>Mobile  <i class="fas fa-phone icon"></i>: 63610XXXXX</p>
-        <p>Email  <i class="fas fa-envelope icon"></i>: XXXXX@gmail.com</p>
+        <p>Mobile  <i class="fas fa-phone icon"></i>: 6361057684</p>
+        <p>Email  <i class="fas fa-envelope icon"></i>: kbhargavi1503@gmail.com</p>
         <p>LinkedIn  <i class="fab fa-linkedin icon"></i>: <a href="https://www.linkedin.com/in/bhargavi-k-1274b7258" target="_blank">linkedin.com/in/bhargavi-k-1274b7258</a></p>
         <p>GitHub  <i class="fab fa-github icon"></i>: <a href="https://github.com/bhxrg" target="_blank">https://github.com/bhxrg</a></p>
     </section>
-
+  
 </body>
 </html>
